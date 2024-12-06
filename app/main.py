@@ -10,8 +10,8 @@ class Vector:
             coordinate_x: Union[int, float],
             coordinate_y: Union[int, float]
     ) -> None:
-        self.coordinate_x = round(coordinate_x, 2)
-        self.coordinate_y = round(coordinate_y, 2)
+        self.x = round(coordinate_x, 2)
+        self.y = round(coordinate_y, 2)
 
     def __add__(self, other_vector: Vector) -> Vector:
         new_x = round(self.x + other_vector.x, 2)
